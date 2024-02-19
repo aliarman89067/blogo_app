@@ -19,8 +19,8 @@ export default function MobileNavbar() {
       <SheetContent>
         <div className="flex flex-col gap-3 ">
           {navbarLinks.map((link) => (
-            <SheetClose asChild>
-              <Link href={link.href} key={link.id} className="text-neon">
+            <SheetClose asChild key={link.id}>
+              <Link href={link.href} className="text-neon">
                 {link.name}
               </Link>
             </SheetClose>
